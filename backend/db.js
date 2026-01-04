@@ -5,7 +5,7 @@ require('dotenv').config();
 const dbPath = path.resolve(__dirname, process.env.DATABASE_URL || 'database.sqlite');
 const db = new Database(dbPath, { verbose: console.log });
 
-// Initialize schema
+
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
