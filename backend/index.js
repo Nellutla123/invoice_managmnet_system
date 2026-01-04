@@ -6,8 +6,15 @@ const db = require('./db');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
+
+// Health check for Render
+app.get('/health', (req, res) => res.status(200).send('OK'));
 
 const JWT_SECRET = process.env.JWT_SECRET || 'supersecret';
 
