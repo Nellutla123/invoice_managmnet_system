@@ -41,7 +41,7 @@ npm run dev
 
 ## Screenshots
 - **Dashboard**: 
-![Dashboard](C:\Users\nikhi\.gemini\antigravity\brain\12086b6e-62e0-4432-89fa-ebdc3ee8e39a\dashboard_final_1767541916054.png)
+![Dashboard](./assets/dashboard.png)
 
 ## Demonstration
-![App Verification](C:\Users\nikhi\.gemini\antigravity\brain\12086b6e-62e0-4432-89fa-ebdc3ee8e39a\app_demo_retry_1767541491830.webp)
+![App Verification](./assets/demo.webp)
